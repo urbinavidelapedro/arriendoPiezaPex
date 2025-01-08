@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arriendo de Habitación</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header class="text-center py-3">
+        <h1>Arriendo de Habitación</h1>
+    </header>
+
+    <main class="container mt-4">
+        <!-- Category Selector -->
+        <div class="text-center mb-4">
+            <button class="btn btn-primary me-2 category-btn" data-category="all">Todas</button>
+            <button class="btn btn-secondary me-2 category-btn" data-category="pieza">Pieza</button>
+            <button class="btn btn-secondary me-2 category-btn" data-category="baño">Baño</button>
+            <button class="btn btn-secondary category-btn" data-category="closet">Closet</button>
+        </div>
+
+        <!-- Carousel -->
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" id="carousel-images">
+                <!-- Images will be inserted here dynamically by JavaScript -->
+            </div>
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </main>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
